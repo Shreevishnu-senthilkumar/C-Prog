@@ -1,0 +1,19 @@
+#include <stdio.h>
+int disp_reverse_number(void);
+int main()
+{
+   int x= disp_reverse_number();
+    printf("%d", x);
+}
+int disp_reverse_number()
+{
+    int n, rev = 0;
+    printf("Enter a Number:");
+    scanf("%d", &n);
+    while(n != 0)
+    {
+        rev = (rev * 10) + (n % 10);
+        n = n / 10;
+    }
+   return rev;
+}

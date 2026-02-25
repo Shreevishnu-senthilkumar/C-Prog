@@ -1,0 +1,16 @@
+#include <stdio.h>
+int main()
+{
+    disp_odd();
+}
+void disp_odd()
+{
+    int i,sum=0;
+    for(i = 1; i <= 9; i++)
+    {
+        if(i % 2 != 0)
+        {
+            printf("%d\n", i);
+        }
+    }
+}
